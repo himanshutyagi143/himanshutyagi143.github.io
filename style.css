@@ -1,0 +1,40 @@
+*{}
+body{}
+a{ text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.new{}
+.clr{clear: both;}
+.bg1{}
+.bg2{}
+.bg3{}
+.bg4{}
+.bg5{}
+.header{background-color: #39a8ca; height: 25vh;}
+.head{ width: 95%; margin: auto;}
+.head-left{}
+.head-right{}
+.nav{}
+.nav ul{}
+.nav ul li{display:inline; margin-right: 5%; text-align: center;}
+.nav ul li a{font-size: 20px;}
+.nav1{}
+.nav1 ul{}
+.nav1 ul li{}
+.nav1 ul li a{}
+.mid{}
+.mid-left{ width: 70%; background-color: whitesmoke; height: 55vh;}
+.post{}
+.post h1{}
+.post p{}
+.post img{ width: 100%;}
+.post a{}
+.mid-right{ width: 29%; background-color: aquamarine; height: 55vh;}
+.footer{text-align: center;}
+.txt{}
+.btn{}
+.sel{}
+.msg{color: red;}
+
+
+
