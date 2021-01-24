@@ -1,64 +1,73 @@
+<!-- login php code  -->
 <?php
-require_once 'config/database.php';
-require_once 'validation.php';
-if(isset($_POST['admin_login']))
+if(isset($_POST['sub']))
 {
     extract($_POST);
-    $query = "SELECT * FROM `login` WHERE `aemail`='$admin_email' and `apass`='$admin_pass'"; 
+    $query = "SELECT * FROM `login` WHERE `auname`='$uname' and `apwd`='$pwd'";
     $data = mysqli_query($dbcon,$query);
     $res = mysqli_fetch_array($data);
-    // validation on login form 
-    if(empty($admin_email) && empty($admin_pass))
+    if($uname == "" and $pwd == "")
     {
-        $msg = "Please Enter Email & Password";
+        $msg = "Please fill all data";
     }
-    else if(empty($admin_email))
+    else if($uname == "")
     {
-        $msg ="Please Enter Your Email";
+        $msg = "Please enter email id";
     }
-    else if(empty($admin_pass))
+    else if($pwd == "")
     {
-        $msg ="Please Enter Your Password";
+        $msg = "Please enter Password";
     }
-    // checking id and password in database
-    else
-    {
-        if($res['aemail'] == $admin_email and $res['apass'] == $admin_pass)
+    else{
+        if($res['auname'] == $uname and $res['apwd'] == $pwd)
         {
-            header("location: admin.php");
+            header('location: Home.php');
         }
         else
         {
-            $msg = "Id & Password do not match";
+            $msg = "ID and Password Incorrect";
         }
     }
-    
 }
+
 ?>
 
 
-<!DOCTYPE html>
+<!-- Login form Html Code  -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+table { margin: auto; }
+        </style>
+
+       
 </head>
 
-<body class="admin_body_login">
-    <div class="login">
-        <a href="./"><img src="image/logo.png" alt="image not found" class="admin_logo"></a>
-        <form method="post">
-            <p><input type="email" name="admin_email" placeholder="Enter Admin Email" class="txt"></p>
-            <p><input type="password" name="admin_pass" placeholder="Enter Admin Password" class="txt"></p>
-            <p><input type="submit" name="admin_login" value="Admin Login" class="btn"></p>
-            <p class="msg"><?php echo @$msg; ?></p>
-        </form>
-        <h4><a href="../">Back To Main Site</a></h4>
-    </div>
+<body>
+    <table width="30%" height="500px">
+        <tr>
+            <td>
+         <center>   <img src="images/admin.png" style="width: 40%;"></center>
+                <!-- <h1 style="text-align: center; color: #fff;">Login</h1> -->
+                <marquee style="color: #fff;">Your Ipaddress will traced in <span id="timer"></span></marquee>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <form method="post">
+                <p><input style="text-align: center; width: 50%;" type="text" name="uname" placeholder="Username"></p>
+                <p><input style="text-align: center; width: 50%;" type="password" name="pwd" placeholder="password"></p>
+                <!-- <p style="color: #05e9f5;"><input type="checkbox" name="remember">Remember me</p> -->
+                <p><input class="sub_frm" type="submit" name="sub" value="Login"></p>
+            <p class="error_form"><?php echo @$msg; ?></p>
+            </form>
+            </td>
+        </tr>
+    </table>
 
-</body>
-
-</html>
+   
+   
