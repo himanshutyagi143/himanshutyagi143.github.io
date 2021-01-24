@@ -1,40 +1,45 @@
 *{}
 body{}
+.admin_body_login{background-image: url(image/back2.jpg); background-repeat: no-repeat; background-size: 100%; background-position: center;}
 a{ text-decoration: none;}
-.fl{float: left;}
-.fr{float: right;}
+.fl{}
+.fr{}
 .new{}
-.clr{clear: both;}
+.clr{}
 .bg1{}
 .bg2{}
 .bg3{}
 .bg4{}
 .bg5{}
-.header{background-color: #39a8ca; height: 25vh;}
+.header{}
 .head{ width: 95%; margin: auto;}
 .head-left{}
 .head-right{}
 .nav{}
 .nav ul{}
-.nav ul li{display:inline; margin-right: 5%; text-align: center;}
-.nav ul li a{font-size: 20px;}
+.nav ul li{}
+.nav ul li a{}
 .nav1{}
 .nav1 ul{}
 .nav1 ul li{}
 .nav1 ul li a{}
 .mid{}
-.mid-left{ width: 70%; background-color: whitesmoke; height: 55vh;}
+.mid-left{ width: 70%;}
 .post{}
 .post h1{}
 .post p{}
 .post img{ width: 100%;}
 .post a{}
-.mid-right{ width: 29%; background-color: aquamarine; height: 55vh;}
-.footer{text-align: center;}
-.txt{}
-.btn{}
+.mid-right{ width: 29%;}
+.footer{}
+.login{ text-align: center; width: 35%; margin: auto; background-color: #000000c4; padding-bottom: 32px;}
+.login h4 a{color: #fff; font-size: 16px; border: 1px solid; width: 50%; margin: auto; padding: 10px; background-color: #0000009c;}
+.txt{ width: 90%; height: 30px; margin-bottom: 10px; text-align: center;}
+/* .txt:focus{background-color: #21759B; color: #fff;} */
+.btn{ width: 90%; height: 40px; background-color: #21759B; color: #fff; font-size: 18px;}
 .sel{}
 .msg{color: red;}
+.admin_logo{width: 30%;}
 
 
 
