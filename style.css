@@ -1,45 +1,13 @@
-*{}
-body{}
-.admin_body_login{background-image: url(image/back2.jpg); background-repeat: no-repeat; background-size: 100%; background-position: center;}
-a{ text-decoration: none;}
-.fl{}
-.fr{}
-.new{}
-.clr{}
-.bg1{}
-.bg2{}
-.bg3{}
-.bg4{}
-.bg5{}
-.header{}
-.head{ width: 95%; margin: auto;}
-.head-left{}
-.head-right{}
-.nav{}
-.nav ul{}
-.nav ul li{}
-.nav ul li a{}
-.nav1{}
-.nav1 ul{}
-.nav1 ul li{}
-.nav1 ul li a{}
-.mid{}
-.mid-left{ width: 70%;}
-.post{}
-.post h1{}
-.post p{}
-.post img{ width: 100%;}
-.post a{}
-.mid-right{ width: 29%;}
-.footer{}
-.login{ text-align: center; width: 35%; margin: auto; background-color: #000000c4; padding-bottom: 32px;}
-.login h4 a{color: #fff; font-size: 16px; border: 1px solid; width: 50%; margin: auto; padding: 10px; background-color: #0000009c;}
-.txt{ width: 90%; height: 30px; margin-bottom: 10px; text-align: center;}
-/* .txt:focus{background-color: #21759B; color: #fff;} */
-.btn{ width: 90%; height: 40px; background-color: #21759B; color: #fff; font-size: 18px;}
-.sel{}
-.msg{color: red;}
-.admin_logo{width: 30%;}
-
-
-
+body { background-image: url("images/back1.jpg"); background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.error_form {color: red; margin: auto; padding: 10px;}
+.sub_frm {width: 80%; margin-bottom: 20px; padding: 10px; background-color: #171f22; color: #0dfcf7; text-transform: uppercase; box-shadow: 0px 0px 25px #0dfcf7;}
+footer{
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100px;
+    color: #fff;
+    }
+footer h4{
+    text-align: center;
+    line-height: 150px;
+}
