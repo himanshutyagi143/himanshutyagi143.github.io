@@ -12,3 +12,8 @@ footer h4{
     line-height: 150px;
 }
 .admin_img { width: 10%; background-color: #fff; border-radius: 5%; }
+@media only screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+}
